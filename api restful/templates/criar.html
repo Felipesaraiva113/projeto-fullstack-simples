@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <script src="../static/js/criar.js"></script>
+    <style>
+        fieldset {
+            border-color: aqua;
+            color: rgb(214, 183, 6);
+            width: 500px;
+        }
+        fieldset > legend {
+            color: rgb(255, 217, 1);
+        }
+        h1 {
+            color: gold;
+        }
+        body {
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            color: rgb(214, 183, 6);
+            background-color: rgb(233, 233, 233);
+        }
+        input.botao {
+            background-color: rgb(167, 166, 166); 
+            color: black;
+            cursor: pointer;
+        }
+        div {
+           display: grid;
+           place-items: center;
+        }
+        div > form, input {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulário de Cadastro</h1>
+        <form action="index.html" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Preencha os campos abaixo</legend>
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" id="inome" name="nome">
+                </p>
+                <p>
+                    <label for="ialtura">Altura</label>
+                    <input type="text" id="ialtura" name="altura" placeholder="x.xx" >
+                </p>
+                <p>
+                    <label for="inacionalidade">País</label>
+                    <input type="text" id="inacionalidade" name="nacionalidade" >
+                </p>
+                <p>
+                    <label for="inascimento">Birth</label>
+                    <input type="text" id="inascimento" name="nascimento" placeholder="xx/xx/xx" >
+                </p>
+                <p>
+                    <label for="ipeso">Peso</label>
+                    <input type="text" id="ipeso" name="peso" placeholder="xxx.xx" >
+                </p>
+                <p>
+                    <label for="iprof">Prof</label>
+                    <input type="text" id="iprof" name="prof" >
+                </p>
+                <p>
+                    <label for="isexo">Sexo</label>
+                    <input type="text" id="isexo" name="sexo" placeholder="M ou F" >
+                </p>
+                <p>
+                    <label for="icursopreferido">Curso</label>
+                    <input type="text" id="icursopreferido" name="cursopreferido" placeholder="ID do curso preferido" >
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao" id="enviar">
+                <input type="reset" value="Limpar" class="botao">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

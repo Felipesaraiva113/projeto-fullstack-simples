@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <script src="../static/js/edit.js"></script>
+    <style>
+        fieldset {
+            border-color: aqua;
+            color: rgb(214, 183, 6);
+            width: 500px;
+        }
+        fieldset > legend {
+            color: rgb(255, 217, 1);
+        }
+        h1 {
+            color: gold;
+        }
+        body {
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            color: rgb(214, 183, 6);
+            background-color: rgb(233, 233, 233);
+        }
+        input.botao {
+            background-color: rgb(167, 166, 166); 
+            color: black;
+            cursor: pointer;
+        }
+        div {
+           display: grid;
+           place-items: center;
+        }
+        div > form, input {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulário de Edição</h1>
+        <form action="index.html" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Escolha o campo que deseja alterar</legend>
+                <input type="radio" name="campo" id="inome" value="nome">
+                <label for="inome">Nome</label><br>
+                <input type="radio" name="campo" id="ialtura" value="altura">
+                <label for="ialtura">Altura</label><br>
+                <input type="radio" name="campo" id="inacionalidade" value="nacionalidade">
+                <label for="inacionalidade">Nacionalidade</label><br>
+                <input type="radio" name="campo" id="inascimento" value="nascimento">
+                <label for="inascimento">Nascimento</label><br>
+                <input type="radio" name="campo" id="ipeso" value="peso">
+                <label for="ipeso">Peso</label><br>
+                <input type="radio" name="campo" id="iprof" value="prof">
+                <label for="iprof">Profissão</label><br>
+                <input type="radio" name="campo" id="isexo" value="sexo">
+                <label for="isexo">Sexo</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Digite o Novo Dado</legend>
+                <input type="text" id="novo-valor">
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao enviar">
+                <input type="reset" value="Limpar" class="botao">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

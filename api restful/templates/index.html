@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../static/js/script.js" defer></script>
+    <style>
+        .gafanhotos {
+            background-color: blue;
+            color: rgb(255, 217, 1);
+            margin-top: 20px;
+            margin: 0 auto;
+        }
+        .gafanhotos > p {
+            color: rgb(177, 151, 3);
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: gold;
+        }
+        body {
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .botoes > a {
+            border: 1px solid black;
+            background-color: rgb(167, 166, 166); 
+            padding: 5px; 
+            border-radius: 5px; 
+            text-align: center;
+            width: 50px;
+            margin: 5px;
+        }
+        .botoes > p > a {
+            text-decoration: none;
+            color: black;
+        }
+        .botoes > p {
+            border: 1px solid black;
+            background-color: rgb(167, 166, 166); 
+            padding: 5px; 
+            border-radius: 5px; 
+            text-align: center;
+            width: 50px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .botoes {
+            display: flex;
+            flex-direction: row;
+           justify-content: center;
+        }
+        #cadastro {
+            background-color: rgb(167, 166, 166);
+            color: black;
+            cursor: pointer;
+        }
+        h2 > a {
+            color: black;
+            text-decoration: underline;
+        }
+        h2 > a:hover {
+            color: rgb(82, 82, 82);
+        }
+        h2 > a:active {
+            color: yellow;
+        }
+    </style>
+<body>
+    <h1>LISTA DE ALUNOS</h1>
+    <div id="alunos">
+        
+    </div>
+    <div class="gafanhotos" style="border: 5px solid rgb(54, 54, 54); padding: 3px; border-radius: 8px; width: 400px; text-align: center;" id="cadastro">
+            <h2><a href="criar.html">Cadastrar aluno</a></h2>
+    </div>
+</body>
+</html>
