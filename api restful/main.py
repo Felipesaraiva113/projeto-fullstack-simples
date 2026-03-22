@@ -4,10 +4,10 @@ import mysql.connector
 app = Flask(__name__)
 CORS(app)
 db_config = {
-    'host': 'localhost',
-    'user': 'felipe',
-    'password': 'Jy9^DQxD',
-    'database': 'cadastro'
+    'host': 'xxxxxxx',
+    'user': 'xxxxxx',
+    'password': 'xxxxxxxx',
+    'database': 'xxxxxxxx'
 }
 def get_db_connection():
     return mysql.connector.connect(**db_config)
