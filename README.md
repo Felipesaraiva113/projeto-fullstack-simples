@@ -1,2 +1,2 @@
-Projeto Fullstack simples desenvolvido para unificar as tecnologias de desenvolvimento web que aprendi em 2025 e para colocar em prática JavasCript assíncrono.
+Sistema de Gestão de Alunos: Desenvolvido com Python (Flask), MySQL e JavaScript, este projeto foca na implementação de um CRUD dinâmico com atualização em tempo real via Fetch API. O objetivo principal foi consolidar conhecimentos em integração fullstack e assincronismo, garantindo uma interface funcional e manipulação direta de banco de dados relacional.
 Início e término do desenvolvimento: 22/12/2025 | 29/12/2025.
